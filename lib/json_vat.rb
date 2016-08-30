@@ -68,6 +68,10 @@ module JSONVAT
       client.reset_rates
     end
 
+    def reset_rates
+      @rates = nil
+    end
+
     def country(country)
       client.country(country)
     end

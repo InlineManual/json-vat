@@ -3,8 +3,10 @@ require "spec_helper"
 RSpec.describe JSONVAT do
   before do
     # Use a fixture file to provide VAT rates. Note that jsonvat.com is no longer available
-    described_class.perform_caching = true
-    described_class.cache_backend = JSONVAT::FileCacheBackend.new(file_fixture("vat_rates.json"))
+    JSONVAT.configure do |c|
+      c.perform_caching = true
+      c.cache_backend = JSONVAT::FileCacheBackend.new(file_fixture("vat_rates.json"))
+    end
   end
 
   describe "#rates" do

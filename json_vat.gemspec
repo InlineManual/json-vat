@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description = "Allows you to easily lookup VAT rats for EU countries based on the data from jsonvat.com."
   s.files = Dir["{lib}/**/*"]
 
-  s.add_dependency "json", "~> 1.7"
+  s.add_dependency "json", "~> 2.5"
 
   s.add_development_dependency "rspec", "~> 3.10"
 end

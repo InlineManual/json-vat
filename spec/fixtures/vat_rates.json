@@ -1,0 +1,53 @@
+{
+  "details": "http://github.com/adamcooke/vat-rates",
+  "version": null,
+  "rates": [
+    {
+      "name": "France",
+      "code": "FR",
+      "country_code": "FR",
+      "periods": [
+        {
+          "effective_from": "2014-01-01",
+          "rates": {
+            "super_reduced": 2.1,
+            "reduced1": 5.5,
+            "reduced2": 10.0,
+            "standard": 20.0
+          }
+        },
+        {
+          "effective_from": "2012-01-01",
+          "rates": {
+            "super_reduced": 2.1,
+            "reduced1": 5.5,
+            "reduced2": 7.0,
+            "standard": 19.6
+          }
+        },
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "super_reduced": 2.1,
+            "reduced1": 5.5,
+            "standard": 19.6
+          }
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "code": "UK",
+      "country_code": "GB",
+      "periods": [
+        {
+          "effective_from": "2011-01-04",
+          "rates": {
+            "standard": 20.0,
+            "reduced": 5.0
+          }
+        }
+      ]
+    }
+  ]
+}
